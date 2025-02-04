@@ -6,6 +6,6 @@ Our 4th year capstone project where we made an inventory manageent system for th
 
 
 <h2>dashboard</h2>
-![image alt](screenshots/its-dashboard.png)
+![Alt text](scsreenshots/its-dashboard.png)
 
 
