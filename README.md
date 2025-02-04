@@ -1,6 +1,6 @@
 # ITS-Invetory-Management-System
 
-Our 4th year capstone project where we made an inventory manageent system for the ITS department of Univeristy of Perpetual Help System Laguna. 
+Our 4th-year capstone project where we made an inventory management system for the ITS department of University of Perpetual Help System Laguna. 
 
 <h2>Login</h2>
 
