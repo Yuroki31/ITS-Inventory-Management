@@ -16,7 +16,7 @@ if ($result === false) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Item List</title>
+    <title>Borrowing List</title>
     <link rel="stylesheet" href="items.css"> <!-- Optional: Link to a CSS file for styling -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css">
@@ -29,7 +29,7 @@ if ($result === false) {
 
 <div class="container mt-5">
     <div class="d-flex justify-content-between align-items-center">
-        <h3>Inventory List</h3>
+        <h3>Borrowing List</h3>
         <button class="btn btn-secondary" onclick="printTable()">Print</button>
         <button class="btn btn-success" id="downloadPdf">Download PDF</button>
         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addItemModal">

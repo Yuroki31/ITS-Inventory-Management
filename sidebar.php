@@ -58,6 +58,9 @@
                 <a href="dashboard.php?page=item_list" class="nav-link sidebar-link">Items</a>
             </li>
             <li class="nav-item">
+                <a href="dashboard.php?page=borrow_list" class="nav-link sidebar-link">Borrowing List</a>
+            </li>
+            <li class="nav-item">
                 <a href="dashboard.php?page=borrow_history" class="nav-link sidebar-link">Borrowers</a>
             </li>
             <li class="nav-item">
