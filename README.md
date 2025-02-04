@@ -11,7 +11,7 @@ Our 4th year capstone project where we made an inventory manageent system for th
 
 <h2>Dashboard</h2>
 
-![Alt text](scsreenshots/its-dashboard.png)
+![Alt text](screenshots/its-dashboard.png)
 
 <h2>Borrow</h2>
 
