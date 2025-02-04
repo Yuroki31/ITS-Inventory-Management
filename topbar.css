@@ -1,0 +1,48 @@
+/* Navbar styles */
+.main-header {
+    background-color: #007bff; /* Sets the navbar background to match the brand color */
+    color: #997bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1030; /* Keeps it above other components */
+}
+
+.main-header .navbar-nav .nav-link {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-header .navbar-nav .nav-link:hover {
+    background-color: #0056b3; /* Slightly darker shade for hover effect */
+    color: #e9ecef;
+}
+
+.main-header .navbar-nav .nav-link i {
+    margin-right: 5px;
+}
+
+.main-header .navbar-nav .nav-link[data-widget="pushmenu"] {
+    padding-right: 0.75rem;
+}
+
+.main-header .navbar-nav .nav-link[data-widget="pushmenu"]:hover {
+    color: #d4d4d4;
+}
+
+.main-header .navbar-nav .text-white {
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.main-header .navbar-nav .text-white:hover {
+    color: #d4d4d4;
+}
+
+/* Add responsiveness to navbar */
+@media (max-width: 768px) {
+    .main-header .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+}

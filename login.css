@@ -1,0 +1,248 @@
+#backgroundVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  z-index: -1; /* Places video behind other content */
+}
+
+/* Centered H1 styling */
+.heading-container {
+  background-color: #012265;
+  padding: 25px 0; /* Add padding around the heading */
+  margin-bottom: 30px; /* Space between heading and form */
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Center the heading horizontally */
+  position: relative; /* Ensures the absolute positioning of .imgcontainer is relative to this container */
+}
+
+.heading-container h1 {
+  color: #ffde00; /* Yellow color for the heading text */
+  font-size: 2em; /* Font size */
+  font-weight: bold;
+  margin: 0; /* Remove default margin */
+  font-family: Helvetica, Arial, sans-serif;
+  text-transform: uppercase; /* Make the text uppercase */
+}
+
+/* Gradient Underline Effect */
+.heading-container h1::after {
+  content: ''; /* Creates a pseudo-element */
+  position: absolute;
+  bottom: 0px; /* Adjust distance of the line from the text */
+  left: 0;
+  width: 100%;
+  height: 3px; /* Thickness of the underline */
+  background:#ffde00;
+}
+
+/* Center the box and add padding, background, and border for boxed look */
+.form-box {
+  background-color: #f0f8ff;
+  padding: 20px;
+  width: 30%;
+  margin: 15px auto; /* Centers the box within the container */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Input styling */
+.form-box input[type="text"],
+.form-box input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  bottom: 10%;
+}
+
+.form-heading {
+  font-size: 28px;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password], input[type=room] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px auto;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Login - index button style */
+.button1 {
+  background-color: #3498db;
+  color: white;
+  padding: 3px 5px;
+  margin: 8px auto; /* Centers the button */
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  display: block; /* Allows margin auto to center the button */
+  border-radius: 5px;
+}
+
+.button2 {
+  background-color: #3498db;
+  color: white;
+  padding: 3px 5px;
+  margin: 8px auto; /* Centers the button */
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  display: block; /* Allows margin auto to center the button */
+  border-radius: 5px;
+}
+
+/* Add a hover effect for buttons */
+.button1:hover {
+  opacity: 0.8;
+}
+
+/* Dropdown style */
+.dropdown {
+  width: 50%;
+  padding: 12px;
+  margin: 8px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px auto;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 20px auto;
+}
+
+/* Avatar Image Styling */
+.imgcontainer {
+  position: absolute; /* Allows the image to be positioned freely */
+  top: 50%; /* Vertically center the image */
+  right: 1%; /* Align the image to the right edge */
+  transform: translateY(-50%); /* Adjust the vertical positioning */
+  width: 100px; /* Adjust the width as needed */
+  text-align: center; /* Centers the image */
+  margin: 0; /* Removes any unwanted margins */
+}
+
+/* Avatar image */
+img.avatar {
+  width: 90%; /* Ensures the image takes full width of .imgcontainer */
+  height: auto; /* Keeps the image's aspect ratio intact */
+}
+
+/* Left Corner Avatar Image */
+.imgcontainer-left {
+  position: fixed; /* This will make the image stay fixed while scrolling */
+  top: 5px; /* Distance from the top */
+  left: 20px; /* Distance from the left */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.avatar-left {
+  width: 55px; /* Adjust the size of the image */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Style for forgot password link */
+.forgot-password {
+  text-align: right; /* Align it to the right */
+  margin-top: 5px; /* Space between the button and the link */
+  font-size: 12px;
+
+}
+
+.forgot-password a {
+  color: #3498db; /* Blue color for the link */
+  text-decoration: none; /* Remove underline */
+}
+
+.forgot-password a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer Section Styling */
+footer {
+  text-align: center; /* Center the content */
+  padding: 10px; /* Add vertical spacing */
+  background: linear-gradient(90deg, #012265, #0025a0); /* Gradient for a sleek design */
+  opacity: 0.8;
+  color: #fff; /* White text for contrast */
+  font-size: 14px; /* Professional font size */
+  font-weight: bold; /* Highlight the text */
+  position: fixed; /* Keep it fixed at the bottom */
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Shadow for separation */
+  z-index: 10; /* Ensure it's above other elements */
+}
+
+footer a {
+  color: #ffcc00; /* Highlighted link color */
+  text-decoration: none; /* Remove underline for links */
+  margin-left: 5px; /* Add spacing to the left of the link */
+}
+
+footer a:hover {
+  color: #fff; /* White text when hovered */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Style for Facebook icon in footer */
+.facebook-link {
+  margin-left: 10px; /* Adds space between the website link and Facebook icon */
+}
+
+.facebook-icon {
+  width: 30px; /* Adjust the size of the icon */
+  height: 30px; /* Ensure it remains square */
+  vertical-align: middle; /* Align it with the text */
+  transition: transform 0.3s ease; /* Smooth effect on hover */
+}
+
+.facebook-icon:hover {
+  transform: scale(1.1); /* Slight zoom effect when hovered */
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}

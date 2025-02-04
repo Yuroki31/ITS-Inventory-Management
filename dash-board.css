@@ -1,0 +1,70 @@
+/* Layout styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+/* Main layout container */
+.layout {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Sidebar styling */
+.main-sidebar {
+    z-index: 1000; /* Ensure sidebar is on top */
+    position: fixed;
+    width: 250px;
+    background-color: #343a40;
+    color: #fff;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+/* Topbar styling */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 240px; /* Offset for sidebar */
+}
+
+.main-header {
+    background-color: #007bff; /* Sets the navbar background to match the brand color */
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-header .navbar-nav .nav-link {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-content .content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+/* Remove unwanted margins and padding */
+ul.navbar-nav {
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-sidebar {
+        width: 200px;
+    }
+    .main-content {
+        margin-left: 200px;
+    }
+}

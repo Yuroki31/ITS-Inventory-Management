@@ -1,0 +1,5 @@
+[22-Nov-2024 11:39:42 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in C:\xampp\htdocs\ITSMain\borrow_process.php:34
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\ITSMain\borrow_process.php on line 34
+[22-Nov-2024 11:43:51 Europe/Berlin] Prepare failed: Unknown column 'item_id' in 'field list'

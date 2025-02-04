@@ -1,0 +1,76 @@
+/* General print styles */
+@media print {
+    /* Remove unnecessary page elements for printing */
+    body {
+        font-family: Arial, sans-serif; /* Change to your preferred font */
+        margin: 0;
+        padding: 0;
+        color: #000;
+    }
+
+    /* Make the page content take the full width */
+    .container, .table {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Remove headers and footers */
+    h3, .d-flex {
+        display: none;
+    }
+
+    /* Style the table for better readability */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f4f4f4;
+        font-weight: bold;
+    }
+
+    /* Adjust the layout for print */
+    .table-bordered {
+        border: 1px solid #ddd;
+    }
+
+    /* Optional: Add a page break after each table */
+    table {
+        page-break-after: always;
+    }
+
+    /* Optional: Style the button or any interactive elements (hide in print view) */
+    button, .btn {
+        display: none;
+    }
+    
+    /* Optional: Add header/footer to printed page */
+    @page {
+        margin: 20mm;
+    }
+}
+
+/* Optional: Styles for screen view if needed */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    padding: 20px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

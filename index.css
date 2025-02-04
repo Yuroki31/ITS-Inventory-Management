@@ -1,0 +1,154 @@
+#backgroundVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: -1;
+}
+
+/* General button styles */
+.button1, .button2 {
+    padding: 10px;
+    margin: 15px 0;
+    width: 100%;
+    display: block;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.button1 {
+    background-color: #b9c9ff;
+}
+
+.button2 {
+    background-color: #f44336;
+    color: #fff;
+}
+
+/* Button hover effect */
+.button1:hover, .button2:hover {
+    opacity: 0.8;
+}
+
+/* Adjust button container */
+.button-container {
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100px;
+    margin: 30px;
+}
+
+/* Center avatar image */
+.imgcontainer {
+    text-align: left;
+    margin: 20px 0 12px 0;
+    padding: 0px 10px;
+}
+
+img.avatar {
+    width: 10%;
+}
+
+/* Responsive container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Adjust scrollable content for absolute positioning */
+.position-absolute {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    max-width: 300px;
+    z-index: 10;
+}
+
+.position-absolute .card-body {
+    overflow-y: auto;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Totals row (adjust layout for small screens) */
+body .totals-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align items to the left side */
+    align-items: center;
+    gap: 30px; /* Space between the items */
+    margin-top: -3%; /* Top margin for the row */
+    padding-left: 200px; /* Shift the entire row slightly to the right */
+}
+
+/* Styling for each card inside the totals-row with added margins */
+body .totals-row .col-lg-3 {
+    flex: 0 0 200px;
+    max-width: 200px;
+    height: 150px;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px; /* Adds a margin to the top of each card */
+    margin-right: 30px; /* Adjusts the spacing between the cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Remove margin-right from the last item */
+body .totals-row .col-lg-3:last-child {
+    margin-right: 0;
+}
+
+
+/* Flex behavior for the graph container */
+.graph-container.top-center {
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    left: 48%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Adjust width to control the graph's size */
+    max-width: 600px; /* Optional: limits the maximum width */
+}
+
+/* Adjust the canvas inside the graph container */
+.graph-container canvas {
+    width: 100%; /* Ensures canvas uses the full width of its container */
+    height: auto; /* Adjust height automatically based on the width */
+}
+
+/* Responsive adjustments for small screens */
+@media screen and (max-width: 768px) {
+    .graph-container.top-center {
+        width: 90%; /* Adjust the graph container width for smaller screens */
+    }
+    .graph-container canvas {
+        max-height: 300px; /* Ensures the graph doesn't get too tall */
+    }
+}
+
+/* Responsive adjustments for small screens */
+@media screen and (max-width: 768px) {
+    .totals-row > .col-lg-3 {
+        width: 100%;
+        height: auto;
+    }
+    .graph-container canvas {
+        max-height: 300px;
+    }
+}
+
