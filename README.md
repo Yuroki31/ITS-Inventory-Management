@@ -2,5 +2,5 @@
 Our 4th year capstone project where we made an inventory manageent system for the ITS department of Univeristy of Perpetual Help System Laguna
 
 <h2>Login </h2>
-![image alt](https://github.com/Yuroki31/WebSystems_Prelim-Act1/blob/d498cd7e22eade1a74b05cf9a2d81d05ca1e36ca/scrnshot1.png)
+![image alt](https://github.com/Yuroki31/ITS-Inventory-Management/blob/bd0eea37982617135ed97c48f352ce48881bf65b/its-login.png)
 
